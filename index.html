@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Model Building</title>
+<link rel="stylesheet" href="E:\\Intern_project_files\\Assignment3\\static\\css\\style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="login">
+<h1>Reviews and Ratings</h1>
+<form action="{{"E:/Intern_project_files/app.py"}}" method="post">
+<input type="text" name="review", placeholder="Review" required="required" class="myinput"/><br/><br/>
+<input type="text" name="rating", placeholder="Rating" required="required" class="myinput"/><br/><br/>
+<button type="submit" class="btn btn-primary btn-large mybutton">Predict</button>
+</form>
+<br>
+<br>
+{{prediction_text}}
+</div>
+</body>
+
+
+
+
