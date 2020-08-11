@@ -54,7 +54,8 @@ model= load_model("C:\\Users\\AISHWARYA\\Desktop\\InternshipProejectFiles\\aishw
     #cv=pickle.load(file)
 #with h5py.File('aishwaryaModel.h5','r') as file:
     #cv=hdf5_io.load_from_hdf5(file) 
-entered_input="the food is Best"
+#entered_input= request.GET['review']
+entered_input= "the food is best"
 x_intent=cv.transform([entered_input])
 y_pred=model.predict(x_intent)
 if(y_pred>0.5):
